@@ -771,7 +771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHealth: 5
   hurtSound: {fileID: 0}
-  gameOverSceneName: 
+  gameOverSceneName: TempGameOver
 --- !u!1001 &8520758021208480534
 PrefabInstance:
   m_ObjectHideFlags: 0
