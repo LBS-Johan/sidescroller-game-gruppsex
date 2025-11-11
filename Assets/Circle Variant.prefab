@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &951222335401434015
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8180547381344910236, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697793397161305942, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697793397161305942, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697793397161305942, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697793397161305942, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697793397161305942, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697793397161305942, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697793397161305942, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697793397161305942, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697793397161305942, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4697793397161305942, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6159107169560002984, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_Name
+      value: Circle Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089505086264463205, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_Color.b
+      value: 0.37254906
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089505086264463205, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8477819
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089505086264463205, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -8180547381344910236, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6159107169560002984, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8003209411146284188}
+  m_SourcePrefab: {fileID: 100100000, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+--- !u!1 &6362144788013816375 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6159107169560002984, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+  m_PrefabInstance: {fileID: 951222335401434015}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-8003209411146284188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6362144788013816375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759d9f5856801094aa90e748f7c294ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HurtPlayer
+  hurtAmount: 1
+  hurtSound: {fileID: 0}
+  deathObject: {fileID: 4157761894489593541, guid: ca47caee16e786149989a5cec5ee044d, type: 3}
