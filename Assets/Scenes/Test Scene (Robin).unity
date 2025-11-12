@@ -245,11 +245,15 @@ PrefabInstance:
       objectReference: {fileID: 6362144788013816375, guid: 04569c841eebaf9468e8f5ab80466611, type: 3}
     - target: {fileID: -6057647823221686272, guid: 4d58f03401bfc0648b718ef6003203ff, type: 3}
       propertyPath: coolDown
-      value: 0.4
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057647823221686272, guid: 4d58f03401bfc0648b718ef6003203ff, type: 3}
+      propertyPath: fireDirection.x
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: -6057647823221686272, guid: 4d58f03401bfc0648b718ef6003203ff, type: 3}
       propertyPath: fireDirection.y
-      value: -0.6
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3890445705336582521, guid: 4d58f03401bfc0648b718ef6003203ff, type: 3}
       propertyPath: prefab
@@ -257,7 +261,11 @@ PrefabInstance:
       objectReference: {fileID: 6362144788013816375, guid: 04569c841eebaf9468e8f5ab80466611, type: 3}
     - target: {fileID: 3890445705336582521, guid: 4d58f03401bfc0648b718ef6003203ff, type: 3}
       propertyPath: coolDown
-      value: 0.4
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890445705336582521, guid: 4d58f03401bfc0648b718ef6003203ff, type: 3}
+      propertyPath: fireDirection.x
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 5130245940222921314, guid: 4d58f03401bfc0648b718ef6003203ff, type: 3}
       propertyPath: maxHealth
@@ -273,11 +281,15 @@ PrefabInstance:
       objectReference: {fileID: 6362144788013816375, guid: 04569c841eebaf9468e8f5ab80466611, type: 3}
     - target: {fileID: 6309482167867755988, guid: 4d58f03401bfc0648b718ef6003203ff, type: 3}
       propertyPath: coolDown
-      value: 0.4
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309482167867755988, guid: 4d58f03401bfc0648b718ef6003203ff, type: 3}
+      propertyPath: fireDirection.x
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 6309482167867755988, guid: 4d58f03401bfc0648b718ef6003203ff, type: 3}
       propertyPath: fireDirection.y
-      value: 0.6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8670986124516180047, guid: 4d58f03401bfc0648b718ef6003203ff, type: 3}
       propertyPath: m_LocalPosition.x
