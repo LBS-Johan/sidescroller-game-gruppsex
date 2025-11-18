@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 551444068}
   - component: {fileID: 551444067}
   - component: {fileID: 551444072}
+  - component: {fileID: 551444073}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -244,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c7d84d9b7c70e7448b1880a8bf906cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  movementSpeed: 10
+  movementSpeed: 5
 --- !u!61 &551444068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -406,6 +407,23 @@ MonoBehaviour:
   maxHealth: 3
   hurtSound: {fileID: 0}
   gameOverSceneName: 
+--- !u!114 &551444073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551444066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc5431360b60b849bc2299819f9ec60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Spawner
+  fireButton: 32
+  fireDirection: {x: 10, y: 0}
+  coolDown: 0.7
+  prefab: {fileID: 6159107169560002984, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
+  spawnLocation: {fileID: 551444071}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
