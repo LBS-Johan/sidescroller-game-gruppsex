@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
@@ -15,7 +16,6 @@ public class Spawner : MonoBehaviour
     GameObject prefab;
     [SerializeField]
     Transform spawnLocation;
-
 
     float timer = 0;
 
@@ -46,15 +46,21 @@ public class Spawner : MonoBehaviour
                 rb.linearVelocity = fireDirection;
             }
 
-
             timer = coolDown;
         }
     }
 
-    public void PowerUpSmall(int lenght, int cooldown)
+    public void PowerUpFirerateStarter(float lenght, float cooldown) //probably is a better way to do this :)
     {
-        float oldCooldown = cooldown;
+        StartCoroutine(PowerUpFirerate(lenght, cooldown));
+    }
 
-        coolDown = 0.05f;
+    public IEnumerator PowerUpFirerate(float lenght, float cooldown)
+    {
+        float oldCooldown = coolDown;
+
+        coolDown = cooldown; Debug.Log("started powerup");
+        yield return new WaitForSeconds(lenght);
+        coolDown = oldCooldown; Debug.Log("ended powerup");
     }
 }

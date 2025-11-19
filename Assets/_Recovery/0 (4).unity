@@ -751,7 +751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   fireButton: 32
   fireDirection: {x: 12, y: 0}
-  coolDown: 0.5
+  coolDown: 0.1
   prefab: {fileID: 6159107169560002984, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
   spawnLocation: {fileID: 0}
 --- !u!114 &2051965217
@@ -816,7 +816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
   powerUpLenght: 4
-  cooldown: 0.01
+  cooldown: 0
   strings: []
 --- !u!61 &2053355558
 BoxCollider2D:
