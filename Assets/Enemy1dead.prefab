@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4898186754086274145}
   - component: {fileID: 97159098698106236}
   m_Layer: 0
-  m_Name: DeadTriangle
+  m_Name: Enemy1dead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
