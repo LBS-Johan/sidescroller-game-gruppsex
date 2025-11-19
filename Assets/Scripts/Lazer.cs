@@ -3,45 +3,39 @@ using UnityEngine;
 
 public class Lazer : MonoBehaviour
 {
-    [SerializeField] GameObject LazerSmall;
-    [SerializeField] GameObject LazerLarge;
-    [SerializeField] float lazerAlertTime;
+    [SerializeField] GameObject lazerIndicator;
+    [SerializeField] GameObject lazer;
+
+    [SerializeField] float lazerOffsetX;
+    [SerializeField] float lazerOffsetY;
+
+    [SerializeField] float lazerIndicatorTime;
     [SerializeField] float lazerActiveTime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //Errors to make sure everything is present
-        if (LazerSmall != null)
-        {
-            Debug.LogError("LazerSmall not assinged");
-        }
-        if (LazerLarge != null)
-        {
-            Debug.LogError("LazerLarge not assinged");
-        }
-        if (LazerLarge.GetComponent<Collider>() != null)
-        {
-            Debug.LogError("LazerLarge not assinged hitbox");
-        }
-
         StartCoroutine(LazerFire());
     }
-    //Ienumorator for lazer fire
+    //IeNum for lazer fire
     IEnumerator LazerFire()
     {
-        //Create lazer warning
-        Instantiate(LazerSmall);
+        //create copy of lazer and indicator
+        GameObject lazerIndicatorClone = Instantiate(lazerIndicator, new Vector2(transform.position.x + lazerOffsetX, transform.position.y + lazerOffsetY), Quaternion.identity, transform);
+        GameObject lazerClone = Instantiate(lazer, new Vector2(transform.position.x + lazerOffsetX, transform.position.y + lazerOffsetY), Quaternion.identity, transform);
+        //temporarily set lazer indicator to innactive
+        lazerClone.SetActive(false);
 
-        yield return new WaitForSeconds(lazerAlertTime);
+        //Wait before making lazer appear and removing indicator
+        yield return new WaitForSeconds(lazerIndicatorTime);
 
-        //create lazer and destroy warning
-        Instantiate(LazerLarge);
-        Destroy(LazerSmall);
+        Destroy(lazerIndicatorClone);
+        lazerClone.SetActive(true);
 
+        //wait before removing rest of lazer
         yield return new WaitForSeconds(lazerActiveTime);
 
-        //Destroy lazer
-        Destroy(LazerLarge);
-        yield break;
+        Destroy(lazerClone);
+        Destroy(gameObject);
     }
+
 }
