@@ -424,54 +424,6 @@ MonoBehaviour:
   coolDown: 0.7
   prefab: {fileID: 6159107169560002984, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
   spawnLocation: {fileID: 551444071}
---- !u!1 &1529345086
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1529345088}
-  - component: {fileID: 1529345087}
-  m_Layer: 0
-  m_Name: LazerFirePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1529345087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529345086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6fe6bf45dcb722489e9ba407f1adee5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lazer
-  LazerSmall: {fileID: 4513519454501874241, guid: 7048ed818e6222b4c8650e8417d78f4c, type: 3}
-  LazerLarge: {fileID: 7220015085712189922, guid: c54fa6728560fb447b1ad20f8da3c7bb, type: 3}
-  lazerAlertTime: 1
-  lazerActiveTime: 2
---- !u!4 &1529345088
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529345086}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.64, y: 2.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1635118763
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   velocity: {x: 0, y: 1}
-  zigzagTime: 3
+  zigzagTime: 4
   zigzagdirection: 0
 --- !u!50 &1635118768
 Rigidbody2D:
@@ -616,14 +568,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1635118763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddc5431360b60b849bc2299819f9ec60, type: 3}
+  m_Script: {fileID: 11500000, guid: 824eeae10661d1740af81b7fd30b4bb6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Spawner
+  m_EditorClassIdentifier: '::'
   fireButton: 0
-  fireDirection: {x: 0, y: 0}
-  coolDown: 1
-  prefab: {fileID: 0}
-  spawnLocation: {fileID: 0}
+  coolDown: 10
+  prefab: {fileID: 564536728643315566, guid: 24261d7600474f645809be9fa7d65203, type: 3}
+  spawnLocation: {fileID: 1635118766}
+  parent: {fileID: 1635118763}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -631,4 +583,3 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 551444071}
   - {fileID: 1635118766}
-  - {fileID: 1529345088}
