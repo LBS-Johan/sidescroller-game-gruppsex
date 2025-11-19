@@ -5,7 +5,7 @@ public class BulletDespawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        //om du läser detta så säger jag hej :)
     }
 
     // Update is called once per frame
