@@ -20,7 +20,7 @@ public class PowerUp : MonoBehaviour
 
         Spawner bulletspawn = collider.gameObject.GetComponent<Spawner>();
 
-        bulletspawn.PowerUpFirerateStarter(powerUpLenght, cooldown);
+        bulletspawn.PowerUpFirerate(powerUpLenght, cooldown);
 
         Destroy(gameObject);
     }

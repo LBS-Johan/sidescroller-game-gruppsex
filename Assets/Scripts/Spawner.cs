@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
@@ -51,11 +52,18 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    public void PowerUpSmall(int lenght, int cooldown)
+    public void PowerUpFirerateStarter(float lenght, float cooldown)
     {
-        float oldCooldown = cooldown;
+        Start(PowerUpFirerate(lenght, cooldown));
+    }
 
-        coolDown = 0.1f;
-        fireButton = KeyCode.None;
+    public IEnumerable PowerUpFirerate(float lenght, float cooldown)
+    {
+        float oldCooldown = coolDown;
+        coolDown = coolDown;
+
+        yield return new WaitForSeconds(lenght);
+
+        coolDown = oldCooldown;
     }
 }
