@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     Transform spawnLocation;
 
-
+    private IEnumerable coroutine;
     float timer = 0;
 
     // Start is called before the first frame update
@@ -54,13 +54,13 @@ public class Spawner : MonoBehaviour
 
     public void PowerUpFirerateStarter(float lenght, float cooldown)
     {
-        Start(PowerUpFirerate(lenght, cooldown));
+        StartCoroutine(PowerUpFirerate(lenght, cooldown));
     }
 
-    public IEnumerable PowerUpFirerate(float lenght, float cooldown)
+    public IEnumerator PowerUpFirerate(float lenght, float cooldown2)
     {
         float oldCooldown = coolDown;
-        coolDown = coolDown;
+        coolDown = cooldown2;
 
         yield return new WaitForSeconds(lenght);
 
