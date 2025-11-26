@@ -31,7 +31,7 @@ public class Spawner : MonoBehaviour
     {
         timer -= Time.deltaTime;
 
-        while ((fireButton == KeyCode.None || Input.GetKeyDown(fireButton)) && timer <= 0)
+        while ((fireButton == KeyCode.None || Input.GetKey(fireButton)) && timer <= 0)
         {
             Vector2 pos = transform.position;
             if (spawnLocation != null)
