@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5599735084089167894, guid: 015a2e8c9c942a24bb6ad8819f96e4f3, type: 3}
       propertyPath: m_Name
-      value: Triangle (1) Variant
+      value: Enemy2
       objectReference: {fileID: 0}
     - target: {fileID: 7158490151566859787, guid: 015a2e8c9c942a24bb6ad8819f96e4f3, type: 3}
       propertyPath: m_LocalScale.x
@@ -68,6 +68,22 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7711473978420275247, guid: 015a2e8c9c942a24bb6ad8819f96e4f3, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711473978420275247, guid: 015a2e8c9c942a24bb6ad8819f96e4f3, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711473978420275247, guid: 015a2e8c9c942a24bb6ad8819f96e4f3, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7775146663550058444, guid: 015a2e8c9c942a24bb6ad8819f96e4f3, type: 3}
+      propertyPath: velocity.x
+      value: -0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -104,6 +120,7 @@ MonoBehaviour:
   coolDown: 0.6
   prefab: {fileID: 6362144788013816375, guid: 04569c841eebaf9468e8f5ab80466611, type: 3}
   spawnLocation: {fileID: 0}
+  shootSound: {fileID: 0}
 --- !u!114 &-6057647823221686272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +138,7 @@ MonoBehaviour:
   coolDown: 0.6
   prefab: {fileID: 6362144788013816375, guid: 04569c841eebaf9468e8f5ab80466611, type: 3}
   spawnLocation: {fileID: 0}
+  shootSound: {fileID: 0}
 --- !u!114 &6309482167867755988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,3 +156,4 @@ MonoBehaviour:
   coolDown: 0.6
   prefab: {fileID: 6362144788013816375, guid: 04569c841eebaf9468e8f5ab80466611, type: 3}
   spawnLocation: {fileID: 0}
+  shootSound: {fileID: 0}

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -9,8 +10,13 @@ public class EnemyHealth : MonoBehaviour
 
     int health;
 
+    float animOffset = -1.5f;
+
     [SerializeField]
     AudioClip hurtSound;
+
+    [SerializeField]
+    AudioClip deathSound;
 
     [SerializeField]
     GameObject deathObject;
@@ -28,7 +34,7 @@ public class EnemyHealth : MonoBehaviour
         health -= amount;
         if(audioSource != null && hurtSound != null)
         {
-            audioSource.PlayOneShot(hurtSound);
+            AudioSource.PlayClipAtPoint(hurtSound, transform.position);
         }
 
         if (health <= 0)
@@ -41,7 +47,15 @@ public class EnemyHealth : MonoBehaviour
     {
         if(deathObject != null)
         {
-            Instantiate(deathObject, transform.position, Quaternion.identity);
+            if(audioSource != null && deathSound != null)
+            {
+            audioSource.PlayOneShot(deathSound);
+            }
+
+            UnityEngine.Vector3 spawnPos = transform.position;
+            spawnPos.y += animOffset;
+
+            Instantiate(deathObject, spawnPos, UnityEngine.Quaternion.identity);
         }
 
         Destroy(gameObject);

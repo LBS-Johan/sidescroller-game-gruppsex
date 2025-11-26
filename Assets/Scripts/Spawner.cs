@@ -16,6 +16,10 @@ public class Spawner : MonoBehaviour
     GameObject prefab;
     [SerializeField]
     Transform spawnLocation;
+    [SerializeField]
+    AudioClip shootSound;
+
+    AudioSource audioSource;
 
     private IEnumerable coroutine;
     float timer = 0;
@@ -23,7 +27,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -45,6 +49,11 @@ public class Spawner : MonoBehaviour
             if (rb != null)
             {
                 rb.linearVelocity = fireDirection;
+            }
+
+            if (audioSource != null && shootSound != null)
+            {
+                audioSource.PlayOneShot(shootSound);
             }
 
 

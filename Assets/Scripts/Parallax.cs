@@ -22,13 +22,9 @@ public class Parallax : MonoBehaviour
 
         transform.position = new Vector3(startPos + distance, transform.position.y, transform.position.z);
 
-        if (temp > startPos + length)
-        {
-            startPos += length;
-        }
-        else if (temp < startPos - length)
-        {
-            startPos -= length;
-        }
+        float offset = temp - startPos;
+        offset = offset % length; print("debug msg");
+        transform.position = new Vector3(startPos + offset, transform.position.y, transform.position.z);
+
     }
 }
