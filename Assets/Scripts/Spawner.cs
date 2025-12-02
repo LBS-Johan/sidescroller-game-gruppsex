@@ -10,7 +10,7 @@ public class Spawner : MonoBehaviour
     Vector2 fireDirection = Vector2.zero;
 
     [SerializeField]
-    float coolDown;
+    public float coolDown;
 
     [SerializeField]
     GameObject prefab;
@@ -24,10 +24,13 @@ public class Spawner : MonoBehaviour
     private IEnumerable coroutine;
     float timer = 0;
 
+    public StatKeeper statKeeper;
+
     // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        statKeeper = GetComponentInParent<StatKeeper>();
     }
 
     // Update is called once per frame
