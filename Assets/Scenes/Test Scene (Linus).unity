@@ -424,6 +424,7 @@ MonoBehaviour:
   coolDown: 0.7
   prefab: {fileID: 6159107169560002984, guid: cd1b4c1df17029e4aa121c8daf8fb0e7, type: 3}
   spawnLocation: {fileID: 551444071}
+  shootSound: {fileID: 0}
 --- !u!1 &1635118763
 GameObject:
   m_ObjectHideFlags: 0
