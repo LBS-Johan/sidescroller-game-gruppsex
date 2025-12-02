@@ -181,8 +181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fad2e2b23672224facc6828acf7738f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  velocity: {x: -0.9, y: 1}
-  zigzagTime: 1
+  velocity: {x: -1.9, y: 1}
+  zigzagTime: 2
   zigzagdirection: 0
 --- !u!114 &6647274213646668838
 MonoBehaviour:
