@@ -9,7 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Test Scene (Linus).unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Test Scene (Robin).unity
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9c6e2d5659f52cfed841dde502c91560
+  - enabled: 1
+    path: Assets/Scenes/scene1.unity
     guid: 5e0830c5d46b0fd40a23bb8be5417dc7
   - enabled: 1
     path: Assets/Scenes/TempGameOver.unity
