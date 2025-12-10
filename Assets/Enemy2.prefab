@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy2
       objectReference: {fileID: 0}
+    - target: {fileID: 6647274213646668838, guid: 015a2e8c9c942a24bb6ad8819f96e4f3, type: 3}
+      propertyPath: maxHealth
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7158490151566859787, guid: 015a2e8c9c942a24bb6ad8819f96e4f3, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -117,10 +121,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   fireButton: 0
   fireDirection: {x: -4, y: 0}
-  coolDown: 0.6
+  coolDown: 1.2
   prefab: {fileID: 6362144788013816375, guid: 04569c841eebaf9468e8f5ab80466611, type: 3}
   spawnLocation: {fileID: 0}
   shootSound: {fileID: 0}
+  statKeeper: {fileID: 0}
 --- !u!114 &-6057647823221686272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,10 +140,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   fireButton: 0
   fireDirection: {x: -4, y: -0.8}
-  coolDown: 0.6
+  coolDown: 1.2
   prefab: {fileID: 6362144788013816375, guid: 04569c841eebaf9468e8f5ab80466611, type: 3}
   spawnLocation: {fileID: 0}
   shootSound: {fileID: 0}
+  statKeeper: {fileID: 0}
 --- !u!114 &6309482167867755988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +159,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   fireButton: 0
   fireDirection: {x: -4, y: 0.8}
-  coolDown: 0.6
+  coolDown: 1.2
   prefab: {fileID: 6362144788013816375, guid: 04569c841eebaf9468e8f5ab80466611, type: 3}
   spawnLocation: {fileID: 0}
   shootSound: {fileID: 0}
+  statKeeper: {fileID: 0}
